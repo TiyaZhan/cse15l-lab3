@@ -45,4 +45,19 @@ public class ArrayTests {
     ArrayExamples.reverseInPlace(input);
     assertArrayEquals(new int[] {4, 3, 2}, input);
   }
+
+  @Test
+  public void testAveragesize3()
+  {
+    double[] input = {2.0,3.0,4.0};
+
+    assertEquals(3.5, ArrayExamples.averageWithoutLowest(input),0);
+  }
+  @Test
+  public void testAveragesize2()
+  {
+    double[] input = {2.0,4.0, 2.0};
+
+    assertEquals(4.0, ArrayExamples.averageWithoutLowest(input),0);
+  }
 }
