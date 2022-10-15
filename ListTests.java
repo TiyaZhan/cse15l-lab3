@@ -12,11 +12,10 @@ public class ListTests{
     ArrayList<String> exp = new ArrayList<String>();
     input.add("a");
     input.add("abcd");
-    input.add("bcde");
-    input.add("acc");
+    input.add("accd");
     exp.add("abcd");
-    exp.add("bcde");
-    exp.add("acc");
+  
+    exp.add("accd");
     ArrayList<String> result = (ArrayList<String>)ListExamples.filter(input, new LongerString());
     assertEquals(exp.get(1), result.get(1));
 	}
